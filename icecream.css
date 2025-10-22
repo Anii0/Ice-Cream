@@ -1,0 +1,285 @@
+@font-face {
+    font-family: Minecraft;
+    src: url(fonts/Minecraft.ttf);
+}
+body{
+    background-color: #c4a187;
+    margin: 0;
+    padding: 0;
+}
+.bg {
+  width: 70%;
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  left: 50%;             
+  transform: translateX(-50%); 
+  display: block;
+}
+.no-select {
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+.table {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin-left:auto;
+    margin-right: auto;
+    width: 70%;
+    display: block;
+    height: auto;
+    z-index: -1;
+}
+.roof {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+}
+.full-ice {
+    width: 70%;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin-left:auto;
+    margin-right: auto;
+}
+.order {
+    width: 70%;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    top: 0;
+    margin-left:auto;
+    margin-right: auto;
+}
+.ice-cream {
+    width: 70%;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin-left:auto;
+    margin-right: auto;
+    transform: translateY(15px);
+}
+#choc, #vanil, #straw, #mint, #sprink-on, #cara-on, #cherry-on, #choc-on {
+    display: none;
+}
+.vanil {
+    width: 5.8%;
+    display: block;
+    position: fixed;
+    bottom: 60px;
+    left: 237px;
+    cursor: pointer;
+}
+.choc1 {
+    width: 5.8%;
+    display: block;
+    position: fixed;
+    bottom: 60px;
+    left: 317px;
+    cursor: pointer;
+
+}
+.straw {
+    width: 5.8%;
+    display: block;
+    position: fixed;
+    bottom: 60px;
+    left: 403px;
+    cursor: pointer;
+}
+.mint {
+    width: 5.8%;
+    display: block;
+    position: fixed;
+    bottom: 60px;
+    left: 486px;
+    cursor: pointer;
+}
+.sprink{
+    width: 5.8%;
+    display: block;
+    position: fixed;
+    bottom: 100px;
+    left: 600px;
+    cursor: pointer;
+}
+.choc{
+    width: 5.8%;
+    display: block;
+    position: fixed;
+    bottom: 100px;
+    left: 670px;
+    cursor: pointer;
+}
+.cherry{
+    width: 5.8%;
+    display: block;
+    position: fixed;
+    bottom: 36px;
+    left: 600px;
+    cursor: pointer;
+}
+.cara{
+    width: 5.8%;
+    display: block;
+    position: fixed;
+    bottom: 33px;
+    left: 670px;
+    cursor: pointer;
+}
+.cup{
+    width: 15%;
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    left: 807px;
+    cursor: pointer;
+}
+
+.full-ice,
+.order,
+.roof,
+.table {
+  pointer-events: none !important;
+}
+
+#orders-area {
+    font-family: "Minecraft", sans-serif;
+    position: fixed;
+    top: 30px;
+    left: 869px;
+    text-align: center;
+    color: #5b2c04;
+    word-wrap: break-word;
+    width: 200px;
+}
+
+#correct{
+    height: 24px;
+    font-size: 24px;
+    margin: 0;
+}
+#buttons-area {
+    position: fixed;
+    top: 220px;
+    left: 867px;
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+    font-family: "Minecraft", sans-serif;
+    margin: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #f9c98b;
+    border: 2px solid #5b2c04;
+    border-radius: 6px;
+}
+
+#choc, #vanil, #straw, #mint {
+  pointer-events: none;
+}
+
+
+.spoon {
+    z-index: 20px;
+    display: block;
+    position: absolute;
+    width: 5.8%;
+    bottom: 220px;
+    left: 350px;
+    pointer-events: none;
+}
+.flavor-text {
+    font-size: 18px;
+}
+
+.toppings-text {
+    font-size: 18px;
+    margin-bottom: -2px;
+}
+
+.money {
+    top: 50px;
+    font-family: "Minecraft", sans-serif;
+    text-align: right;
+}
+
+#order-text{
+    margin-bottom: -5px;
+}
+
+#shop-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#shop-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #fff8e1;
+    border: 3px solid #5b2c04;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    font-family: "Minecraft", sans-serif;
+    display: block;
+}
+
+
+#shop-popup.hidden {
+    display: none;
+}
+
+
+
+.shop-content h2, .shop-content h3 {
+    margin-top: 0;
+}
+
+.shop-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.shop-preview {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    border: 2px solid #5b2c04;
+}
+
+.buy, .use {
+    font-family: "Minecraft", sans-serif;
+    padding: 5px 10px;
+    margin-left: auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.use.active {
+    background-color: gray;
+    color: white;
+    cursor: default;
+}

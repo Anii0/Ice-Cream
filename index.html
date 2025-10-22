@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Shop</title>
+    <link rel="stylesheet" href="icecream.css">
+</head>
+<body>
+    <img class="no-select roof" src="images/roof.png">
+    <img class="no-select table" src="images/table.png">
+    <img class="no-select full-ice" src="images/full-ice.png">
+
+    <!-- individual flavors -->
+    <img class="no-select choc1" id="click-choc" src="images/choc1.png">
+    <img class="no-select vanil" id="click-vanil" src="images/vani1.png">
+    <img class="no-select straw" id="click-straw" src="images/straw1.png">
+    <img class="no-select mint" id="click-mint" src="images/mint1.png">
+
+    <img class="no-select order" id="orders" src="images/order.png">
+    <img class="no-select cup" id="cup" src="images/cup.png">
+    <img id="shop-icon" src="images/shop.png">
+    <img class="no-select spoon" id="spoon" style="cursor: pointer;" src="images/spoon.png">
+    <img class="bg" src="images/background.png">
+
+    <!-- actual ice cream scoops -->
+    <img class="no-select ice-cream" id="choc" src="images/chocolate.png">
+    <img class="no-select ice-cream" id="straw" src="images/strawberry.png">
+    <img class="no-select ice-cream" id="mint" src="images/mint.png">
+    <img class="no-select ice-cream" id="vanil" src="images/vanilla.png">
+     
+    <!-- toppings on plate and on ice cream-->
+    <img class="no-select sprink" id="sprink-plate" src="images/sprinkle-plate.png">
+    <img class="no-select cherry" id="cherry-plate" src="images/cherry-plate.png">
+    <img class="no-select choc" id="choc-plate" src="images/choc-plate.png">
+    <img class="no-select cara" id="cara-plate" src="images/caramel-plate.png">
+    
+    <img class="no-select ice-cream" id="sprink-on" src="images/sprinkle-on.png">
+    <img class="no-select ice-cream" id="cara-on" src="images/caramel-on.png">
+    <img class="no-select ice-cream" id="choc-on" src="images/choco-on.png">
+    <img class="no-select ice-cream" id="cherry-on" src="images/cherry-on.png">
+
+    <div id="orders-area">
+        <h2 id="order-text">Order: </h2>
+        <h2 class="flavor-text" id="flavor-text">Flavor: </h2>
+        <h2 class="toppings-text" id="toppings-text">Topping: </h2>
+        <h4 id="correct" ></h4>
+    </div>
+
+    <div id="buttons-area">
+        <button id="submit">Submit</button>
+        <button id="reset">Reset</button>
+        <h3 class="money" id="money">$0</h3>
+    </div>
+
+
+
+    <div id="shop-popup" class="hidden">
+    <div class="shop-content">
+        <h2>Shop</h2>
+
+        <h3>Roofs</h3>
+        <div class="shop-item">
+            <img src="images/roof.png" class="shop-preview">
+            <button class="use" data-type="roof" data-id="roof1">Use</button>
+        </div>
+        <div class="shop-item">
+            <img src="images/roof-yellow.png" class="shop-preview">
+            <button class="buy" data-price="10" data-type="roof" data-id="roof2">Buy - $10</button>
+        </div>
+        <div class="shop-item">
+            <img src="images/roof-blue.png" class="shop-preview">
+            <button class="buy" data-price="1000" data-type="roof" data-id="roof3">Buy - $1000</button>
+        </div>
+
+        <h3>Cups</h3>
+        <div class="shop-item">
+            <img src="images/cup.png" class="shop-preview">
+            <button class="use" data-type="cup" data-id="cup1">Use</button>
+        </div>
+        <div class="shop-item">
+            <img src="images/blue-cup.png" class="shop-preview">
+            <button class="buy" data-price="15" data-type="cup" data-id="cup2">Buy - $15</button>
+        </div>
+        <div class="shop-item">
+            <img src="images/green-cup.png" class="shop-preview">
+            <button class="buy" data-price="1020" data-type="cup" data-id="cup3">Buy - $1020</button>
+        </div>
+
+        <button id="close-shop">Close</button>
+    </div>
+    </div>
+
+
+    <script src="icecream.js"></script>
+</body>
+</html>
