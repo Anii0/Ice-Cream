@@ -6,6 +6,13 @@ body{
     background-color: #c4a187;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+#game {
+    position: relative;
+    width: 1280px; 
+    margin: 0 auto; 
+    overflow: hidden;
 }
 .bg {
   width: 70%;
@@ -282,4 +289,5 @@ button {
     background-color: gray;
     color: white;
     cursor: default;
+
 }
